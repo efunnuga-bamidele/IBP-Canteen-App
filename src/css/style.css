@@ -1,0 +1,56 @@
+.jfx-main{
+/*    -fx-background-color:white;*/
+/*    -fx-background-image: url("/image/b3.jpg");
+     -fx-background-repeat: fill;   
+    -fx-background-position: center center;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0); */
+ -fx-background-color:#F4F4F4;
+/* -fx-background-color:F4F4F4;*/
+}
+.jfx-drawer{
+/*    -fx-background-color: #272B52;*/
+}
+.fx-Toolbar{
+/*     -fx-background-color:  #2e215e;*/
+/*     -fx-background-color:  #5264AE;*/
+    -fx-background-color: linear-gradient(to right, #F49E0C , #D95116,#B11917 ,#4B1C13);
+/*       -fx-background-color: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); */
+      
+}
+.jfx-header{
+    -fx-font-weight: bold;
+    -fx-font-size:20px; 
+   
+}
+.jfx-hamburger {
+
+	.jfx-hamburger {
+    -fx-padding: 10.0;
+    -fx-spacing: 4px;
+    -fx-cursor: hand;
+}
+
+.jfx-hamburger StackPane {
+    -fx-pref-width: 30px;
+    -fx-pref-height: 4px;
+    -fx-background-color: #FFF;
+    -fx-background-radius: 5px;
+}
+
+}
+.jfx-menubutton{
+    -fx-font-weight: bold;
+}
+/*.jfx-footer1{
+    -fx-image:url("/image/Qmark.png")no-repeat 0px 0px;
+}
+.jfx-footer2{
+    -fx-image:url("/image/tool.png")no-repeat 0px 0px;
+}*/
+.jfx-footer1{
+    -fx-image:url("/image/rightbar.png")no-repeat 0px 0px;
+}
+.jfx-footer2{
+    -fx-image:url("/image/leftbar.png")no-repeat 0px 0px;
+}
+

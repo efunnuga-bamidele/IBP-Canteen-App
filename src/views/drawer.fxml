@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="567.0" prefWidth="213.0" spacing="16.0" styleClass="jfx-body" stylesheets="@../css/drawer.css" xmlns="http://javafx.com/javafx/8.0.131" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="97.0" fitWidth="129.0" pickOnBounds="true" preserveRatio="true" styleClass="jfx-logo">
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </ImageView>
+      <ImageView fitHeight="97.0" fitWidth="129.0" pickOnBounds="true" preserveRatio="true" styleClass="jfx-logo2">
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="2.0" />
+         </VBox.margin>
+      </ImageView>
+      <JFXButton fx:id="ticket" accessibleText="home" buttonType="RAISED" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="36.0" prefWidth="124.0" style="-fx-background-color: #4B1C13;" styleClass="toggle-button" text="Ticket PrintOut Page" textFill="WHITE">
+         <VBox.margin>
+            <Insets left="10.0" right="10.0" />
+         </VBox.margin>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="login" accessibleText="login" buttonType="RAISED" layoutX="28.0" layoutY="86.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="36.0" prefWidth="124.0" style="-fx-background-color: #4B1C13;" styleClass="toggle-button1" text="Login Page" textFill="WHITE">
+         <VBox.margin>
+            <Insets left="10.0" right="10.0" />
+         </VBox.margin>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="register" accessibleText="registration" buttonType="RAISED" layoutX="28.0" layoutY="127.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="36.0" prefWidth="124.0" style="-fx-background-color: #4B1C13;" styleClass="toggle-button2" text="Registration Page" textFill="WHITE">
+         <VBox.margin>
+            <Insets left="10.0" right="10.0" />
+         </VBox.margin>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="report" accessibleText="report" buttonType="RAISED" layoutX="28.0" layoutY="209.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="36.0" prefWidth="124.0" style="-fx-background-color: #4B1C13;" styleClass="toggle-button4" text="Report Generation Page" textFill="WHITE">
+         <VBox.margin>
+            <Insets left="10.0" right="10.0" />
+         </VBox.margin>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="setting" accessibleText="settings" buttonType="RAISED" layoutX="20.0" layoutY="369.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="36.0" prefWidth="124.0" style="-fx-background-color: #4B1C13;" styleClass="toggle-button5" text="Settings" textFill="WHITE">
+         <VBox.margin>
+            <Insets left="10.0" right="10.0" top="30.0" />
+         </VBox.margin>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+   </children>
+</VBox>

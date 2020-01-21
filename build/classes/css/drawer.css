@@ -1,0 +1,36 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.jfx-body{
+/*-fx-background-color:  #2e215e;*/
+-fx-background-color:  #FFFFFF;
+}
+.jfx-button{
+  -fx-background-color: white;  
+}
+.jfx-logo{
+    -fx-image:url("/image/ABLOGO.png")no-repeat 0px 0px;
+    
+}
+.jfx-logo2{
+    -fx-image:url("/image/crown2.png")no-repeat 0px 0px;
+}
+.toggle-button {
+  -fx-graphic: url("/image/Print_24px.png");
+}
+.toggle-button1 {
+ -fx-graphic: url("/image/User_Credentials_24px.png");
+}
+.toggle-button2 {
+  -fx-graphic: url("/image/Add_User_Male_24px.png");
+}
+.toggle-button3 {
+ -fx-graphic: url("/image/Edit_User_Male_24px.png");
+}
+.toggle-button4 {
+   -fx-graphic: url("/image/Presentation_24px.png");
+}
+.toggle-button5 {
+  -fx-graphic: url("/image/Administrative_Tools_24px.png");
+}

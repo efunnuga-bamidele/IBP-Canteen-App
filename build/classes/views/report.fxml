@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXToolbar?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="551.0" prefWidth="755.0" stylesheets="@../css/report.css" xmlns="http://javafx.com/javafx/8.0.131" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ReportController">
+   <children>
+      <BorderPane prefHeight="551.0" prefWidth="755.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <JFXToolbar maxWidth="1.7976931348623157E308" prefHeight="34.0" prefWidth="755.0" BorderPane.alignment="CENTER">
+               <center>
+                  <Label alignment="CENTER" contentDisplay="CENTER" maxWidth="1.7976931348623157E308" styleClass="hlabel" text="REPORT GENERATION PAGE" BorderPane.alignment="CENTER">
+                     <padding>
+                        <Insets right="150.0" />
+                     </padding>
+                  </Label>
+               </center>
+            </JFXToolbar>
+         </top>
+         <right>
+            <VBox alignment="CENTER_LEFT" prefHeight="517.0" prefWidth="174.0" spacing="15.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="mydate" alignment="CENTER" contentDisplay="CENTER" maxWidth="1.7976931348623157E308" styleClass="blabel" text="DATE: 11 / 5 / 2018" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <JFXRadioButton fx:id="todaysreport" onAction="#showreportnuw" styleClass="blabel" text="Todays Report">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="table" />
+                     </toggleGroup>
+                  </JFXRadioButton>
+                  <JFXRadioButton fx:id="allreport" onAction="#showallreport" styleClass="blabel" text="All Report" toggleGroup="$table" />
+                  <JFXDatePicker fx:id="DatePicker1" defaultColor="BLACK" editable="false" maxWidth="1.7976931348623157E308" promptText="YYYY-MM-DD" showWeekNumbers="true" styleClass="blabel">
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </VBox.margin>
+                  </JFXDatePicker>
+                  <JFXButton buttonType="RAISED" maxWidth="1.7976931348623157E308" onAction="#GenerateReport" style="-fx-background-color: #4B1C13;" styleClass="sbutton" text="Single Date Search " textFill="WHITE">
+                     <graphic>
+                        <FontAwesomeIcon fill="WHITE" iconName="SEARCH" size="2em" />
+                     </graphic>
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </VBox.margin>
+                  </JFXButton>
+                  <JFXDatePicker fx:id="DatePicker2" defaultColor="BLACK" editable="false" maxWidth="1.7976931348623157E308" promptText="YYYY-MM-DD" showWeekNumbers="true" styleClass="blabel">
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </VBox.margin>
+                  </JFXDatePicker>
+                  <JFXDatePicker fx:id="DatePicker3" defaultColor="BLACK" editable="false" maxWidth="1.7976931348623157E308" promptText="YYYY-MM-DD" showWeekNumbers="true" styleClass="blabel">
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </VBox.margin>
+                  </JFXDatePicker>
+                  <JFXButton buttonType="RAISED" maxWidth="1.7976931348623157E308" onAction="#GenerateReportRange" style="-fx-background-color: #4B1C13;" styleClass="sbutton" text="Date Range Search" textFill="WHITE" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </VBox.margin>
+                     <graphic>
+                        <FontAwesomeIcon fill="WHITE" iconName="SEARCH" size="2em" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" maxWidth="1.7976931348623157E308" onAction="#clear" style="-fx-background-color: #4B1C13;" styleClass="sbutton" text="Clear" textFill="WHITE" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </VBox.margin>
+                     <graphic>
+                        <FontAwesomeIcon fill="WHITE" iconName="CLOSE" size="2em" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" maxWidth="1.7976931348623157E308" onAction="#export" style="-fx-background-color: #4B1C13;" styleClass="sbutton" text="Export" textFill="WHITE">
+                     <graphic>
+                        <FontAwesomeIcon fill="WHITE" iconName="FILE_EXCEL_ALT" size="2em" />
+                     </graphic>
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </VBox.margin>
+                  </JFXButton>
+               </children>
+            </VBox>
+         </right>
+         <center>
+            <ScrollPane fitToHeight="true" fitToWidth="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+               <content>
+                  <TableView fx:id="result" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="515.0" prefWidth="579.0" />
+               </content>
+            </ScrollPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

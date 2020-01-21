@@ -1,0 +1,48 @@
+
+.sbutton{
+  -fx-background-color: white;  
+}
+.blabel{
+        -fx-font-weight:bold;
+        -fx-font-size:13px;
+        -fx-text-fill:black;
+    }
+    
+    .jCombo{
+         -fx-font-weight:bold;
+        -fx-font-size:13px;
+        -fx-text-fill:white;
+    }
+   .nlabel{
+        -fx-font-weight:bold;
+        -fx-font-size:16px;
+        -fx-text-fill:black;
+    }
+    .main{
+    -fx-background-color: rgba(0, 0, 0, 0);
+}
+ .hlabel{
+        -fx-font-weight:bold;
+        -fx-font-size:20px;
+        -fx-text-fill:black;
+    }
+    
+    
+    .jfx-snackbar-content {
+    -fx-background-color: #323232;
+    
+}
+.jfx-snackbar-toast {
+    -fx-text-fill: WHITE; 
+    -fx-min-width: 300;
+-fx-min-height: 100;
+-fx-max-width: 350;
+-fx-wrap-text: true;
+-fx-alignment: CENTER;
+-fx-padding: 10;
+}
+.jfx-snackbar-action {
+    -fx-text-fill: #ff4081; 
+    -fx-font-weight:bold;
+    -fx-font-size:14px;
+}

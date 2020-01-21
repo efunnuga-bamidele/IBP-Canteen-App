@@ -1,0 +1,32 @@
+/*
+ * Empty Stylesheet file.
+ */
+.main{
+    -fx-background-color: rgba(0, 0, 0, 0);
+}
+ .hlabel{
+        -fx-font-weight:bold;
+        -fx-font-size:20px;
+        -fx-text-fill:black;
+    }
+    .jfx-picture{
+    -fx-image:url("/image/Picture.png")no-repeat 0px 0px;
+}
+ .blabel{
+        -fx-font-weight:bold;
+        -fx-font-size:16px;
+        -fx-text-fill:black;
+    }
+    .dlabel{
+        -fx-font-weight:bold;
+        -fx-font-size:16px;
+        -fx-text-fill:black;
+    }
+.mainFxmlClass {
+
+   
+}
+
+.text-area *.text {
+    -fx-text-alignment: center;
+}

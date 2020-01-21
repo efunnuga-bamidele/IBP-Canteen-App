@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="rootPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="571.0" prefWidth="772.0" styleClass="main" stylesheets="@../css/index.css" xmlns="http://javafx.com/javafx/8.0.131" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.IndexController">
+   <children>
+      <BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="50.0" stylesheets="@../css/index.css" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXTextField fx:id="requestID" alignment="CENTER" labelFloat="true" promptText=" …Enter your Staff ID Number and press Enter Key to print out ticket" styleClass="blabel">
+                     <padding>
+                        <Insets left="10.0" right="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets left="30.0" right="30.0" top="10.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <Label styleClass="blabel" text="Or" />
+                  <Label fx:id="bioInfo" alignment="CENTER" contentDisplay="CENTER" disable="true" maxWidth="1.7976931348623157E308" prefHeight="50.0" styleClass="blabel" text="Biometric Finger print scanner not available">
+                     <VBox.margin>
+                        <Insets left="30.0" right="30.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="feedbackInfo" alignment="CENTER" contentDisplay="CENTER" maxWidth="1.7976931348623157E308" prefHeight="50.0" style="-fx-background-color: gray;" styleClass="blabel">
+                     <VBox.margin>
+                        <Insets left="30.0" right="30.0" />
+                     </VBox.margin>
+                  </Label>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="40.0">
+                     <children>
+                        <JFXButton fx:id="acceptBTN" buttonType="RAISED" disable="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#printAction" prefHeight="99.0" prefWidth="215.0" ripplerFill="#00fc0d" style="-fx-background-color: #4B1C13;" text="Yes" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="cancleBTN" buttonType="RAISED" disable="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#cancel" prefHeight="99.0" prefWidth="215.0" ripplerFill="#fa0036" style="-fx-background-color: #4B1C13;" text="No" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+                  <Label fx:id="printStatus" alignment="CENTER" contentDisplay="CENTER" maxWidth="1.7976931348623157E308" prefHeight="30.0" styleClass="blabel">
+                     <VBox.margin>
+                        <Insets left="30.0" right="30.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+         </center>
+         <right>
+            <VBox alignment="CENTER" prefHeight="524.0" prefWidth="235.0" spacing="20.0" stylesheets="@../css/index.css" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fx:id="picture" fitHeight="150.0" fitWidth="187.0" pickOnBounds="true" preserveRatio="true" styleClass="jfx-picture" />
+                  <JFXTextField fx:id="surname" alignment="CENTER" editable="false" promptText="Display Surname" styleClass="dlabel">
+                     <VBox.margin>
+                        <Insets right="10.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="firstname" alignment="CENTER" editable="false" promptText="Display Firstname" styleClass="dlabel">
+                     <VBox.margin>
+                        <Insets right="10.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="othername" alignment="CENTER" editable="false" promptText="Display Othername" styleClass="dlabel">
+                     <VBox.margin>
+                        <Insets right="10.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="staffid" alignment="CENTER" editable="false" promptText="Display Staff ID Number" styleClass="dlabel">
+                     <VBox.margin>
+                        <Insets right="10.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="department" alignment="CENTER" editable="false" promptText="Display Department" styleClass="dlabel">
+                     <VBox.margin>
+                        <Insets right="10.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="subdepartment" alignment="CENTER" editable="false" promptText="Display Sub-Department" styleClass="dlabel">
+                     <VBox.margin>
+                        <Insets right="10.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="category" alignment="CENTER" editable="false" promptText="Category" styleClass="dlabel">
+                     <VBox.margin>
+                        <Insets right="10.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="duty" alignment="CENTER" editable="false" promptText="Duty" styleClass="dlabel">
+                     <VBox.margin>
+                        <Insets right="10.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+               </children>
+            </VBox>
+         </right>
+         <top>
+            <HBox alignment="CENTER" prefHeight="47.0" prefWidth="772.0" BorderPane.alignment="CENTER">
+               <children>
+                  <GridPane alignment="CENTER" prefHeight="47.0" prefWidth="775.0" stylesheets="@../css/index.css" HBox.hgrow="ALWAYS">
+                    <columnConstraints>
+                      <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="130.0" minWidth="10.0" prefWidth="130.0" />
+                      <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="456.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="186.0" minWidth="10.0" prefWidth="186.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="hlabel" stylesheets="@../css/index.css" text="TICKET PRINTOUT PAGE" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+                           <padding>
+                              <Insets right="80.0" />
+                           </padding>
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="hlabel" text="DETAILS" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                           <padding>
+                              <Insets left="10.0" right="10.0" />
+                           </padding>
+                           <GridPane.margin>
+                              <Insets right="20.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <JFXButton buttonType="RAISED" maxWidth="1.7976931348623157E308" onAction="#overclear" prefHeight="25.0" prefWidth="100.0" ripplerFill="RED" style="-fx-background-color: #4B1C13; -fx-text-fill: white; -fx-font-weight: bold;" text="Overide Clear">
+                           <GridPane.margin>
+                              <Insets left="10.0" right="10.0" />
+                           </GridPane.margin>
+                        </JFXButton>
+                     </children>
+                  </GridPane>
+               </children>
+            </HBox>
+         </top></BorderPane>
+   </children>
+</AnchorPane>

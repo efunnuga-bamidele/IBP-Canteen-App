@@ -1,0 +1,23 @@
+/*
+ * Empty Stylesheet file.
+ */
+.main{
+    -fx-background-color: rgba(0, 0, 0, 0);
+}
+.dlabel{
+        -fx-font-weight:bold;
+        -fx-font-size:12px;
+        -fx-text-fill:black;
+    }
+       .jfx-picture{
+    -fx-image:url("/image/Picture.png")no-repeat 0px 0px;
+}
+
+.combo-box > .list-cell {
+
+-fx-text-fill: black;
+}
+.mainFxmlClass {
+
+   
+}

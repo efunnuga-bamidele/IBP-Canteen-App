@@ -1,0 +1,26 @@
+/*
+ * Empty Stylesheet file.
+ */
+.jfx-logo{
+    -fx-image:url("/image/Security_Checked_800px.png")no-repeat 0px 0px;
+}
+.mainFxmlClass {
+
+}
+.blabel{
+        -fx-font-weight:bold;
+        -fx-font-size:14px;
+        -fx-text-fill:black;
+    }
+   .nlabel{
+        -fx-font-weight:bold;
+        -fx-font-size:16px;
+        -fx-text-fill:black;
+    }
+    
+    .toggle-button1 {
+ -fx-graphic: url("/image/Checked_24px.png");
+}
+.toggle-button2 {
+  -fx-graphic: url("/image/Cancel_24px.png");
+}
